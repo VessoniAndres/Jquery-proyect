@@ -1,0 +1,60 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #0c0c0c;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    background: radial-gradient(rgba(11,93,30,0.5), rgb(11,93,30)), url('../img/pexels-hazan-aköz-ışık-751046.jpg') #7dcd85;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+header .container{
+    height: 700px;
+}
+header .menu{
+    width: 100%;
+    text-align: right;
+}
+header .menu a{
+    color:white;
+    font-size: 22px;
+    font-weight:100;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+header .menu a:hover {
+    text-decoration: underline;
+}
+header .text {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 52%;
+    margin-top: -52px;
+}
+header .name{
+    font-size: 70px;
+    font-weight: 600;
+}
+header .name span{
+    font-weight: 300;
+}
+header h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
