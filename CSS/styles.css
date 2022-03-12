@@ -58,3 +58,48 @@ header h3{
     font-size: 25px;
     font-style: italic;
 }
+/* Main */
+main{
+    background-image: url('../img/patronMain.png');
+    background-repeat: repeat;
+}
+/* Main >> About Us */
+main .aboutUs .container{
+    overflow: visible;
+    position: relative;
+}
+main .aboutUs .img{
+    width: 80%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: 0;
+    box-shadow: 0 0 15px rgba(0,0,0,.35);
+}
+main .aboutUs .img img{
+    vertical-align: top;
+    width: 100%;
+}
+main .aboutUs article{
+    background-color: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 150px;
+    z-index: 10;
+    float: right;
+    box-shadow: 0 0 15px rgba(0,0,0,.35);
+}
+main .aboutUs article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+main .aboutUs article {
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+/* Main >> Menu */
+main .menu{
+    padding-top: 570px;
+}
