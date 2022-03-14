@@ -16,7 +16,6 @@ header{
     width: 100%;
     background: radial-gradient(rgba(11,93,30,0.5), rgb(11,93,30)), url('../img/pexels-hazan-aköz-ışık-751046.jpg') #7dcd85;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
@@ -85,7 +84,7 @@ main .aboutUs article{
     padding: 40px;
     width: 50%;
     position: relative;
-    top: 150px;
+    top: 500px;
     z-index: 10;
     float: right;
     box-shadow: 0 0 15px rgba(0,0,0,.35);
@@ -183,6 +182,13 @@ main .location .addres{
     float: left;
     width: 50%;
     text-align: left;
+} 
+main .location .addres a,
+main .location .addres a:visited {
+    /* text-decoration: none; */
+    color: #0c0c0c;
+    display: block;
+    margin-bottom: 15px;
 }
 main .location .addres .street{
     margin-bottom: 15px;
@@ -219,4 +225,77 @@ footer .copiright{
     color: #fff;
     text-align: center;
     padding: 15px 0;
+}
+/* Media Queries */
+@media screen and (max-width: 800px){
+    header .container{
+        position: static;
+        height: auto;
+    }
+    header .menu{
+        text-align: center;
+    }
+    header .menu a{
+        margin: 10px 20px;
+    }
+    header .text{
+        position: static;
+        margin: 100px 0;
+    }
+    header .text .name{
+        font-size: 30px;
+    }
+    header .text .h1{
+        font-size: 18px;
+    }
+    main .aboutUs .img{
+        width: 100%;
+        position: relative;
+    }
+    main .aboutUs article{
+        width:auto;
+        position: relative;
+        top: -50px;
+    }
+    main .menu {
+        padding-top: 0px;
+    }
+    main .menu .menuContainer2{
+        display: block;
+    }
+    main .menu article{
+        padding: 0;
+        width: 100%;
+    }
+    main .menu article h4{
+        margin-top: -5px;
+    }
+    main .menu article .price{
+        margin-right: 10px;
+    }
+    main .galery .photo{
+        width: 50%;
+    }
+    main .map{
+        width: 80%;
+        height: 80vh;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 400px){
+    main .abouUs article h3{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    main .menu article .item h4,
+    main .menu article .item .price{
+        font-size: 16px;
+        margin-top: auto;
+        line-height: 16px;
+    }
+    main .location .addres,
+    main .location .hours{
+        width: 100%;
+        text-align: center;
+    }
 }
